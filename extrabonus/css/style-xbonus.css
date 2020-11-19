@@ -1,7 +1,7 @@
 
 /* soluzione alternativa con testo circondato da tag e uso di position:asolute, così da rendere allineamento indipendente da contentuto */
 
-/* Regole di base uguali per tutti gli elementi .col- */
+/* ----regole di base uguali per tutti gli elementi .col- */
 [class*="col-"] {
   height: 200px;
   border: 1px solid #000000;

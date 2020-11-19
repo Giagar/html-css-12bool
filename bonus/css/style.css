@@ -1,0 +1,34 @@
+
+/* Regole di base uguali per tutti gli elementi .col- */
+[class*="col-"] {
+  height: 50px;
+}
+
+/* Classi utility */
+.wrapper {
+  background: lightblue;
+}
+
+.red {
+  background: #F00;
+}
+
+.brown {
+  background-color: #7F3300;
+}
+
+.pink {
+  background-color: #FFC89E;
+}
+
+.black {
+  background-color: #000000;
+}
+
+.blue {
+  background-color: #0026FF;
+}
+
+.yellow {
+  background-color: #FFD800;
+}
