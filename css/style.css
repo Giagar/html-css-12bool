@@ -1,7 +1,33 @@
-div {
+
+/* Regole di base uguali per tutti gli elementi .col- */
+[class*="col-"] {
   height: 200px;
   border: 1px solid #000000;
   background: #FDC1CB;
   text-align: center;
   line-height: 200px;
 }
+
+/* ----ultima riga */
+[class*="col-"] .container {
+  padding: 5px;
+}
+
+/* ----nested elements */
+[class*="col-"] .container [class*="col-"] {
+  background: #ED8182;
+  height: 190px;
+  border: 1px solid white;
+  position: relative;
+}
+
+[class*="col-"] .container [class*="col-"] span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* per negare la regola comune a tutti i col- */
+  line-height: normal;
+}
+
+/* una soluzione migliore, forse, potrebbe essere quella di circondare tutte le scritte con un tag e dare a tutti la regola position. In questo modo non avremmo una soluzione che funziona solo per i testi specifici dell'esempio */
