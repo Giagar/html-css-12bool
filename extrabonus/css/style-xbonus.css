@@ -1,0 +1,30 @@
+
+/* soluzione alternativa con testo circondato da tag e uso di position:asolute, così da rendere allineamento indipendente da contentuto */
+
+/* Regole di base uguali per tutti gli elementi .col- */
+[class*="col-"] {
+  height: 200px;
+  border: 1px solid #000000;
+  background: #FDC1CB;
+  text-align: center;
+  position: relative;
+}
+
+[class*="col-"] span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* ----ultima riga */
+[class*="col-"] .container {
+  padding: 5px;
+}
+
+/* ----nested elements */
+[class*="col-"] .container [class*="col-"] {
+  background: #ED8182;
+  height: 190px;
+  border: 1px solid white;
+}
